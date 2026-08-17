@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ====================================================================
+       UAS PEMROGRAMAN WEB I - SEMESTER GENAP 2025/2026
+       UNIVERSITAS SIBER ASIA (UNSIA)
+       Tema: Website Edukasi Pengenalan Komputer untuk Anak Usia Dini (TK/PAUD)
+       Nama Website: EduKids - Sahabat Komputer Cilik
+       ==================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>My Labkomputer: Easy Pizzy Lemon Squizy - Belajar Komputer Seru untuk Anak TK & PAUD</title>
+  <meta name="description" content="Website edukasi interaktif pengenalan perangkat keras komputer untuk anak usia dini (TK/PAUD) dengan fitur kuis seru dan suara narator.">
+  <meta name="keywords" content="edukasi anak, belajar komputer tk, pengenalan komputer paud, kuis komputer anak, my labkomputer">
+  <meta name="author" content="My Labkomputer">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/komi-mascot.svg">
+
+  <!-- Google Fonts & Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       1. HEADER & NAVBAR (Pertemuan: Navigasi, Link, & Semantik HTML5)
+       ==================================================================== -->
+  <header class="main-header">
+    <div class="container navbar">
+      <a href="#hero" class="nav-brand" id="brand-logo">
+        <img src="assets/images/komi-mascot.svg" alt="Logo Maskot Robot Komi" class="brand-icon">
+        <div class="brand-text">
+          <h1>My Labkomputer</h1>
+          <small>Easy Pizzy Lemon Squizy</small>
+        </div>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Buka Menu Navigasi">
+        ☰
+      </button>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link">Beranda</a></li>
+          <li><a href="#perangkat" class="nav-link">Mengenal Alat</a></li>
+          <li><a href="#tabel" class="nav-link">Tabel Perangkat</a></li>
+          <li><a href="#panduan" class="nav-link">Tips & Aturan</a></li>
+          <li><a href="#media" class="nav-link">Video & Lagu</a></li>
+          <li><a href="#kuis" class="nav-link nav-cta">Kuis Pintar 🎮</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         2. HERO SECTION (Pertemuan: Heading H1-H2, Paragraf, Format Teks, Gambar)
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>✨</span> Modul Belajar Digital TK &amp; PAUD
+          </div>
+          <h1 class="hero-title">
+            Halo Sahabat Cilik! Ayo Belajar <span>Komputer</span> Bersama Robot Kami!
+          </h1>
+          <p class="hero-desc">
+            Komputer adalah <strong>sahabat pintar</strong> yang bisa membantumu <em>menggambar</em>, 
+            <u>mewarnai</u>, mendengarkan <mark>lagu anak</mark>, dan belajar hal-hal baru dengan sangat menyenangkan!
+          </p>
+          
+          <!-- Text Formatting Showcase: Blockquote & Small -->
+          <blockquote>
+            <q>Belajar mengenal dunia teknologi dengan cara yang sederhana melalui pendekatan interaktif.</q>
+            <cite>— Miss Lily Mylabkomputer</cite>
+          </blockquote>
+
+          <div class="hero-actions">
+            <a href="#perangkat" class="btn btn-primary" id="btn-explore">
+              🚀 Mulai Berpetualang
+            </a>
+            <a href="#kuis" class="btn btn-accent" id="btn-quiz-hero">
+              🎮 Main Kuis Seru
+            </a>
+            <a href="#media" class="btn btn-outline" id="btn-song-hero">
+              🎵 Dengar Lagu
+            </a>
+          </div>
+        </div>
+
+        <!-- Mascot with Interactive Speech Bubble -->
+        <div class="hero-mascot-wrapper">
+          <figure>
+            <img src="assets/images/komi-mascot.svg" alt="Maskot Robot Kami yang Ramah" class="mascot-hero-img" id="komi-mascot-img">
+            <figcaption style="display:none;">Robot Kami - Sahabat Belajar Anak</figcaption>
+          </figure>
+          <div class="mascot-speech-bubble" id="mascot-speech-bubble">
+            <p id="mascot-speech-text">
+              "Klik aku atau tombol suara untuk mendengarkan penjelasanku ya teman-teman! 🤖🔊"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. PERANGKAT KOMPUTER (Pertemuan: Kartu Interaktif, Grid, Heading H3-H4)
+         ==================================================================== -->
+    <section class="section" id="perangkat">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Bagian-Bagian Komputer</span>
+          <h2 class="section-title">Kenali Sahabat Perangkat Kerasmu</h2>
+          <p class="section-subtitle">
+            Klik kartu di bawah ini untuk melihat fungsi dan mendengarkan suaranya!
+          </p>
+        </header>
+
+        <div class="devices-grid">
+          <!-- 1. Monitor -->
+          <article class="device-card" data-device="monitor">
+            <div class="device-icon-wrap">
+              <img src="assets/images/monitor.jpg" alt="Monitor Komputer LG">
+            </div>
+            <h3 class="device-name">Monitor</h3>
+            <span class="device-tag">Layar Kaca</span>
+            <p class="device-brief">Tempat melihat kartun, video belajar, dan gambar yang kamu buat.</p>
+            <div class="card-actions">
+              <button class="btn-voice-card" type="button" aria-label="Dengar suara Monitor">
+                🔊 Dengar Suara
+              </button>
+            </div>
+          </article>
+
+          <!-- 2. CPU -->
+          <article class="device-card" data-device="cpu">
+            <div class="device-icon-wrap">
+              <img src="assets/images/cpu.jpg" alt="CPU Kotak Otak Komputer">
+            </div>
+            <h3 class="device-name">CPU</h3>
+            <span class="device-tag">Otak Komputer</span>
+            <p class="device-brief">Kotak pintar yang mengatur semua tugas dan permainan di komputer.</p>
+            <div class="card-actions">
+              <button class="btn-voice-card" type="button" aria-label="Dengar suara CPU">
+                🔊 Dengar Suara
+              </button>
+            </div>
+          </article>
+
+          <!-- 3. Keyboard -->
+          <article class="device-card" data-device="keyboard">
+            <div class="device-icon-wrap">
+              <img src="assets/images/keyboard.jpg" alt="Keyboard Papan Ketik">
+            </div>
+            <h3 class="device-name">Keyboard</h3>
+            <span class="device-tag">Papan Ketik</span>
+            <p class="device-brief">Papan dengan tombol huruf A-Z dan angka untuk menulis namamu.</p>
+            <div class="card-actions">
+              <button class="btn-voice-card" type="button" aria-label="Dengar suara Keyboard">
+                🔊 Dengar Suara
+              </button>
+            </div>
+          </article>
+
+          <!-- 4. Mouse -->
+          <article class="device-card" data-device="mouse">
+            <div class="device-icon-wrap">
+              <img src="assets/images/mouse.jpg" alt="Mouse Si Tikus Pintar">
+            </div>
+            <h3 class="device-name">Mouse</h3>
+            <span class="device-tag">Tikus Penggerak</span>
+            <p class="device-brief">Dipegang tangan untuk menggeser panah dan meng-klik gambar.</p>
+            <div class="card-actions">
+              <button class="btn-voice-card" type="button" aria-label="Dengar suara Mouse">
+                🔊 Dengar Suara
+              </button>
+            </div>
+          </article>
+
+          <!-- 5. Speaker -->
+          <article class="device-card" data-device="speaker">
+            <div class="device-icon-wrap">
+              <img src="assets/images/speaker.jpg" alt="Speaker Pengeras Suara Komputer">
+            </div>
+            <h3 class="device-name">Speaker</h3>
+            <span class="device-tag">Pengeras Suara</span>
+            <p class="device-brief">Mengeluarkan suara lagu anak-anak, dongeng, dan musik ceria.</p>
+            <div class="card-actions">
+              <button class="btn-voice-card" type="button" aria-label="Dengar suara Speaker">
+                🔊 Dengar Suara
+              </button>
+            </div>
+          </article>
+
+          <!-- 6. Printer -->
+          <article class="device-card" data-device="printer">
+            <div class="device-icon-wrap">
+              <img src="assets/images/printer.jpg" alt="Printer Mesin Cetak Epson">
+            </div>
+            <h3 class="device-name">Printer</h3>
+            <span class="device-tag">Pencetak Gambar</span>
+            <p class="device-brief">Mencetak gambarmu ke kertas putih asli untuk diwarnai bersama.</p>
+            <div class="card-actions">
+              <button class="btn-voice-card" type="button" aria-label="Dengar suara Printer">
+                🔊 Dengar Suara
+              </button>
+            </div>
+          </article>
+
+          <!-- 7. Headphones -->
+          <article class="device-card" data-device="headphones">
+            <div class="device-icon-wrap">
+              <img src="assets/images/headphones.jpg" alt="Headphones Nyaman">
+            </div>
+            <h3 class="device-name">Headphones</h3>
+            <span class="device-tag">Penutup Telinga</span>
+            <p class="device-brief">Mendengarkan pelajaran tanpa mengganggu suara teman di sebelah.</p>
+            <div class="card-actions">
+              <button class="btn-voice-card" type="button" aria-label="Dengar suara Headphones">
+                🔊 Dengar Suara
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. TABEL KLASIFIKASI PERANGKAT (Pertemuan: Tabel Lengkap HTML5)
+         ==================================================================== -->
+    <section class="section table-section" id="tabel">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Ringkasan Materi Pelajaran</span>
+          <h2 class="section-title">Tabel Klasifikasi &amp; Fungsi Perangkat Komputer</h2>
+          <p class="section-subtitle">
+            Tabel edukasi lengkap untuk memudahkan adik-adik dan Ibu/Bapak Guru memahami tugas masing-masing alat.
+          </p>
+        </header>
+
+        <div class="table-responsive-wrapper">
+          <table class="edu-table" summary="Tabel Perangkat Komputer untuk Siswa TK/PAUD">
+            <caption>📊 Daftar Perangkat Komputer Anak Usia Dini</caption>
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Nama Perangkat</th>
+                <th scope="col">Kategori Sistem</th>
+                <th scope="col">Fungsi Utama Bagi Anak TK</th>
+                <th scope="col">Tingkat Kemudahan</th>
+                <th scope="col">Ikon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><strong>Monitor</strong></td>
+                <td><span class="table-badge badge-output">Output (Keluaran)</span></td>
+                <td>Menampilkan film animasi, gambar mewarnai, &amp; huruf</td>
+                <td>⭐⭐⭐ Sangat Mudah Dilihat</td>
+                <td>🖥️</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><strong>CPU</strong></td>
+                <td><span class="table-badge badge-process">Processing (Pemroses)</span></td>
+                <td>Memproses perintah game dan menyalakan sistem komputer</td>
+                <td>⭐⭐ Perlu Bantuan Guru</td>
+                <td>🎛️</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><strong>Keyboard</strong></td>
+                <td><span class="table-badge badge-input">Input (Masukan)</span></td>
+                <td>Mengetik huruf nama anak, angka hitungan, dan spasi</td>
+                <td>⭐⭐ Belajar Mengetik</td>
+                <td>⌨️</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><strong>Mouse</strong></td>
+                <td><span class="table-badge badge-input">Input (Masukan)</span></td>
+                <td>Menggerakkan panah kursor dan mengklik benda di layar</td>
+                <td>⭐⭐⭐ Sangat Mudah Dipakai</td>
+                <td>🖱️</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><strong>Speaker</strong></td>
+                <td><span class="table-badge badge-output">Output (Keluaran)</span></td>
+                <td>Mengeluarkan suara musik riang, lagu edukasi, dan dongeng</td>
+                <td>⭐⭐⭐ Menyenangkan</td>
+                <td>🔊</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td><strong>Printer</strong></td>
+                <td><span class="table-badge badge-output">Output (Keluaran)</span></td>
+                <td>Mencetak gambar hasil karya anak ke kertas asli</td>
+                <td>⭐⭐ Didampingi Guru</td>
+                <td>🖨️</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4"><strong>Keterangan Ringkas:</strong> Perangkat Input untuk memasukkan data, Perangkat Output untuk menghasilkan tampilan/suara.</td>
+                <td colspan="2"><strong>Total Perangkat:</strong> 6 Unit Pokok</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. TIPS, ATURAN, & GLOSARIUM (Pertemuan: Lists UL, OL, DL & Formatting)
+         ==================================================================== -->
+    <section class="section" id="panduan">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Tata Tertib &amp; Glosarium</span>
+          <h2 class="section-title">Panduan Bermain Komputer yang Sehat</h2>
+          <p class="section-subtitle">
+            Adik-adik hebat selalu mengikuti aturan belajar komputer dengan tertib dan cerdas!
+          </p>
+        </header>
+
+        <div class="lists-grid">
+          <!-- Unordered List (ul) -->
+          <article class="list-box">
+            <div class="list-box-header">
+              <span class="list-box-icon">🌟</span>
+              <div>
+                <h3>Aturan Komputer Sehat</h3>
+                <small>Daftar Tak Berurutan (&lt;ul&gt;)</small>
+              </div>
+            </div>
+            <ul class="edu-ul">
+              <li>Cuci tangan sebelum menyentuh keyboard dan mouse.</li>
+              <li>Duduk tegak dan tidak terlalu membungkuk di kursi.</li>
+              <li>Jaga jarak mata minimal <abbr title="Centimeter">50 cm</abbr> dari layar monitor.</li>
+              <li>Bermain komputer secukupnya, maksimal <mark>30 menit</mark> sehari.</li>
+              <li>Jangan makan atau menaruh minuman manis di dekat komputer!</li>
+            </ul>
+          </article>
+
+          <!-- Ordered List (ol) -->
+          <article class="list-box">
+            <div class="list-box-header">
+              <span class="list-box-icon">🔌</span>
+              <div>
+                <h3>Langkah Menyalakan PC</h3>
+                <small>Daftar Berurutan (&lt;ol&gt;)</small>
+              </div>
+            </div>
+            <ol class="edu-ol">
+              <li>Pastikan kabel listrik sudah terpasang rapi oleh Guru atau Ayah/Ibu.</li>
+              <li>Tekan tombol daya <kbd>POWER</kbd> pada kotak CPU.</li>
+              <li>Tekan tombol daya pada monitor hingga layarnya menyala terang.</li>
+              <li>Tunggu sebentar sampai gambar di desktop komputer muncul.</li>
+              <li>Gerakkan mouse dan pilih aplikasi belajar yang kamu sukai!</li>
+            </ol>
+          </article>
+
+          <!-- Description List (dl) -->
+          <article class="list-box">
+            <div class="list-box-header">
+              <span class="list-box-icon">📖</span>
+              <div>
+                <h3>Kata Ajaib Komputer</h3>
+                <small>Glosarium Definisi (&lt;dl&gt;)</small>
+              </div>
+            </div>
+            <dl class="edu-dl">
+              <dt>🖱️ Klik (Click)</dt>
+              <dd>Menekan satu kali tombol mouse sebelah kiri untuk memilih gambar.</dd>
+              <dt>🖱️ Dobel Klik (Double Click)</dt>
+              <dd>Menekan tombol mouse dua kali secara cepat untuk membuka aplikasi.</dd>
+              <dt>⌨️ Spasi (Spacebar)</dt>
+              <dd>Tombol paling panjang di keyboard untuk memberi jarak antarkata.</dd>
+              <dt>🖥️ Desktop</dt>
+              <dd>Layar tampilan utama komputer tempat ikon-ikon permainan berada.</dd>
+            </dl>
+          </article>
+        </div>
+
+        <!-- Format Text Elements Demonstration -->
+        <div style="margin-top: 2rem; padding: 1.5rem; background: #ffffff; border-radius: 16px; border: 2px dashed #cbd5e0;">
+          <h4>💡 Contoh Format Teks Pelajaran Pertemuan 2-3:</h4>
+          <p>
+            Anak TK yang <del>malas belajar</del> <ins>rajin belajar</ins> akan menjadi anak pintar! 
+            Gunakan tombol <kbd>Ctrl</kbd> + <kbd>S</kbd> untuk menyimpan karya gambarmu. 
+            Kode rahasia robot adalah <code>ROBOT_KOMI_V1</code>. 
+            Ingat selalu pesan <abbr title="Taman Kanak-Kanak">TK</abbr> &amp; <abbr title="Pendidikan Anak Usia Dini">PAUD</abbr>: Belajar dengan gembira!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. MULTIMEDIA SECTION (Pertemuan: Audio, Video, Web Audio Soundboard)
+         ==================================================================== -->
+    <section class="section media-section" id="media">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Audio &amp; Video Edukasi</span>
+          <h2 class="section-title">Tonton Video &amp; Dengarkan Lagu Komputer</h2>
+          <p class="section-subtitle">
+            Media interaktif untuk menemani waktu santai dan bernyanyi bersama teman sekelas.
+          </p>
+        </header>
+
+        <div class="media-grid">
+          <!-- Video Card with Native HTML5 Video Element -->
+          <article class="media-card">
+            <h3>🎬 Video Edukasi: Lagu Komputer Cilik</h3>
+            <p>Tonton animasi dan lagu edukasi seru tentang pengenalan komputer untuk anak-anak:</p>
+            
+            <div class="video-container">
+              <video controls poster="assets/images/monitor.jpg" preload="metadata">
+                <source src="assets/media/Lagu Komputer.mp4" type="video/mp4">
+                Maaf, browsermu tidak mendukung tag video HTML5.
+              </video>
+            </div>
+            <small>💡 Klik tombol play di atas untuk memutar video edukasi interaktif.</small>
+          </article>
+
+          <!-- Audio Card with Native Audio Player & Synthesizer Soundboard -->
+          <article class="media-card">
+            <h3>🎵 Audio Player: Lagu Sahabat Komputer</h3>
+            <p>Dengarkan melodi ceria yang membuat suasana belajar makin asyik:</p>
+
+            <div class="audio-box">
+              <p><strong>Lagu Komputer Cilik (Synthesizer Chime)</strong></p>
+              <audio controls preload="none">
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Maaf, browsermu tidak mendukung tag audio HTML5.
+              </audio>
+            </div>
+
+            <!-- Soundboard Buttons -->
+            <h4>🎹 Papan Suara Interaktif (Web Audio FX):</h4>
+            <div class="soundboard-buttons">
+              <button class="sound-btn" onclick="window.EduAudio.playPop()">🫧 Gelembung</button>
+              <button class="sound-btn" onclick="window.EduAudio.playCorrect()">✨ Suara Benar</button>
+              <button class="sound-btn" onclick="window.EduAudio.playStarDing()">⭐ Bintang Ajaib</button>
+              <button class="sound-btn" onclick="window.EduAudio.playFanfare()">🎺 Terompet Juara</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. KUIS INTERAKTIF ANAK PINTAR (Pertemuan: JavaScript & DOM Manipulation)
+         ==================================================================== -->
+    <section class="section quiz-section" id="kuis">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Tantangan Cilik</span>
+          <h2 class="section-title">Kuis Tebak Perangkat Komputer</h2>
+          <p class="section-subtitle">
+            Uji pengetahuanmu dengan menjawab 5 soal bergambar dan raih Bintang 3!
+          </p>
+        </header>
+
+        <div class="quiz-wrapper">
+          <!-- Quiz Intro Card -->
+          <div id="quiz-intro-card">
+            <div style="text-align: center;">
+              <img src="assets/images/komi-mascot.svg" alt="Robot Kami Quiz Mascot" style="width: 130px; height: 130px; margin: 0 auto 1rem;">
+              <h3>Siap Bermain Bersama Robot Kami?</h3>
+              <p>Ada 5 pertanyaan bergambar yang mudah dan menyenangkan. Setiap jawaban benar bernilai 20 poin!</p>
+              <button class="btn btn-primary" id="quiz-start-btn" style="font-size: 1.15rem; padding: 0.85rem 2rem;">
+                🎮 Mulai Kuis Sekarang
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Play Card (Hidden by default, shown via JS) -->
+          <div id="quiz-play-card" style="display: none;">
+            <div class="quiz-progress-bar-wrap">
+              <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+            </div>
+
+            <div class="quiz-top-info">
+              <span class="quiz-badge" id="quiz-progress-badge">Soal 1 dari 5</span>
+              <button class="btn-voice-card" id="quiz-voice-btn" type="button">
+                🔊 Bacakan Soal
+              </button>
+            </div>
+
+            <div class="quiz-question-box">
+              <img src="assets/images/monitor.jpg" alt="Ilustrasi Soal Kuis" class="quiz-question-img" id="quiz-question-img">
+              <h3 class="quiz-question-text" id="quiz-question-text">
+                1. Benda mana yang bentuknya seperti televisi dan untuk melihat gambar di komputer?
+              </h3>
+              <span class="quiz-hint" id="quiz-hint-text">💡 Petunjuk: Layar kaca yang menampilkan kartun kesukaanmu!</span>
+            </div>
+
+            <div class="quiz-options" id="quiz-options-container">
+              <!-- Options populated dynamically by app.js -->
+            </div>
+          </div>
+
+          <!-- Quiz Result Card (Hidden by default) -->
+          <div id="quiz-result-card" style="display: none;">
+            <div class="quiz-result-box">
+              <div class="result-score-circle">
+                <small>NILAI</small>
+                <span id="final-score-number">100</span>
+              </div>
+              <div class="quiz-stars" id="quiz-stars-container">⭐⭐⭐</div>
+              <h3 id="quiz-praise-text">Luar Biasa! Kamu Anak Sangat Pintar! 🎉</h3>
+              <p>Kamu telah berhasil menyelesaikan kuis pengenalan komputer dengan sangat baik!</p>
+
+              <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+                <button class="btn btn-primary" id="quiz-restart-btn">
+                  🔄 Main Kuis Lagi
+                </button>
+                <a href="#perangkat" class="btn btn-outline">
+                  🖥️ Pelajari Alat Lagi
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       8. MODAL POPUP DIALOGS (Pertemuan: Modal & Interaktivitas DOM)
+       ==================================================================== -->
+  <!-- Device Detail Modal -->
+  <div class="modal-overlay" id="device-modal" role="dialog" aria-modal="true" aria-labelledby="modal-device-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close" aria-label="Tutup Dialog">&times;</button>
+      <img src="assets/images/monitor.jpg" alt="Device Modal Image" class="modal-img" id="modal-device-img">
+      <h3 class="modal-title" id="modal-device-title">Nama Perangkat</h3>
+      <span class="modal-category" id="modal-device-category">Kategori</span>
+      <p id="modal-device-desc" style="color: var(--text-dark); margin: 0.75rem 0;">Penjelasan ramah anak.</p>
+      
+      <div class="modal-fact" id="modal-device-fact">
+        Fakta menarik perangkat.
+      </div>
+
+      <button class="btn btn-accent" id="modal-voice-btn" type="button">
+        🔊 Dengarkan Lagi Suaranya
+      </button>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       9. FOOTER (Pertemuan: Footer Semantik, Metadata UAS, Link Kontak)
+       ==================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand & Vision -->
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+            <img src="assets/images/komi-mascot.svg" alt="Logo Footer" style="width: 36px; height: 36px;">
+            <h3>My Labkomputer</h3>
+          </div>
+          <p style="line-height: 1.7; margin-bottom: 1.25rem;">
+            <strong>Selamat datang di My Labkomputer – Easy Pizzy Lemon Squizy! 🤖💙</strong><br><br>
+            Di sini kita akan belajar mengenal komputer dengan cara yang seru, menyenangkan, dan mudah dipahami. Jangan takut ya! Komputer adalah teman yang bisa membantu kita belajar, bermain, menggambar, dan membuat banyak hal menarik. 🖥️✨
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Menu Pembelajaran</h4>
+          <ul class="footer-links">
+            <li><a href="#perangkat">🖥️ Mengenal Perangkat</a></li>
+            <li><a href="#tabel">📊 Tabel Klasifikasi</a></li>
+            <li><a href="#panduan">📖 Aturan &amp; Langkah</a></li>
+            <li><a href="#media">🎬 Video Animasi</a></li>
+            <li><a href="#kuis">🎮 Kuis Interaktif</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social Links (tel, mailto, whatsapp, target blank) -->
+        <div class="footer-column">
+          <h4>Hubungi Kami</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="mailto:info@mylabkomputer.id">📧 info@mylabkomputer.id</a>
+            </li>
+            <li>
+              <a href="tel:+622127806189">📞 (+6221) 27806189</a>
+            </li>
+            <li>
+              <a href="https://wa.me/6281234567890?text=Halo%20My%20Labkomputer" target="_blank" rel="noopener noreferrer">
+                💬 WhatsApp Guru Cilik
+              </a>
+            </li>
+          </ul>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: #a0aec0;">
+            📍 Jl. Mawar 1, Jakarta Selatan
+          </p>
+        </div>
+      </div>
+
+      <!-- Copyright & Compliance -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 <strong>My Labkomputer</strong> - Easy Pizzy Lemon Squizy. Dibuat dengan cinta untuk generasi penerus bangsa Indonesia.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/audio-tts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
