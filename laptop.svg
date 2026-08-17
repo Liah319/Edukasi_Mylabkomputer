@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lapScreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38b2ac"/>
+      <stop offset="100%" stop-color="#319795"/>
+    </linearGradient>
+  </defs>
+  <!-- Screen Lid (Open) -->
+  <rect x="40" y="30" width="120" height="90" rx="10" fill="#2d3748" filter="drop-shadow(0px 6px 8px rgba(0,0,0,0.2))"/>
+  <rect x="48" y="38" width="104" height="74" rx="6" fill="url(#lapScreenGrad)"/>
+  <!-- Webcam dot -->
+  <circle cx="100" cy="34" r="2" fill="#718096"/>
+  <!-- Cute screen graphic -->
+  <circle cx="100" cy="70" r="18" fill="#e6fffa"/>
+  <text x="100" y="76" font-family="Arial" font-size="20" text-anchor="middle">💻</text>
+  <!-- Laptop Keyboard Base (Perspective) -->
+  <path d="M 20 150 L 38 120 L 162 120 L 180 150 Z" fill="#718096" filter="drop-shadow(0px 6px 6px rgba(0,0,0,0.25))"/>
+  <!-- Keyboard area -->
+  <polygon points="46,124 154,124 162,140 38,140" fill="#4a5568"/>
+  <!-- Trackpad -->
+  <rect x="85" y="142" width="30" height="6" rx="2" fill="#a0aec0"/>
+  <!-- Bottom edge highlight -->
+  <rect x="18" y="150" width="164" height="6" rx="3" fill="#cbd5e0"/>
+</svg>

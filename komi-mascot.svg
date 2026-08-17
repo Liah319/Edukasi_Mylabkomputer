@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748"/>
+      <stop offset="100%" stop-color="#1a202c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Antenna -->
+  <line x1="100" y1="45" x2="100" y2="25" stroke="#f6ad55" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="100" cy="20" r="10" fill="#ecc94b" filter="url(#shadow)"/>
+  <!-- Head -->
+  <rect x="50" y="45" width="100" height="75" rx="20" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+  <!-- Screen Face -->
+  <rect x="62" y="55" width="76" height="55" rx="14" fill="url(#screenGrad)"/>
+  <!-- Eyes -->
+  <circle cx="80" cy="78" r="9" fill="#48bb78"/>
+  <circle cx="83" cy="75" r="3" fill="#ffffff"/>
+  <circle cx="120" cy="78" r="9" fill="#48bb78"/>
+  <circle cx="123" cy="75" r="3" fill="#ffffff"/>
+  <!-- Cute Smile -->
+  <path d="M 88 95 Q 100 104 112 95" stroke="#ecc94b" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <circle cx="70" cy="90" r="5" fill="#fc8181" opacity="0.8"/>
+  <circle cx="130" cy="90" r="5" fill="#fc8181" opacity="0.8"/>
+  <!-- Body -->
+  <rect x="60" y="125" width="80" height="50" rx="16" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+  <!-- Body Screen Buttons -->
+  <circle cx="85" cy="150" r="7" fill="#f6ad55"/>
+  <circle cx="115" cy="150" r="7" fill="#48bb78"/>
+  <!-- Heart icon on chest -->
+  <path d="M 100 144 C 98 140, 93 140, 93 145 C 93 149, 100 155, 100 155 C 100 155, 107 149, 107 145 C 107 140, 102 140, 100 144 Z" fill="#e53e3e"/>
+  <!-- Left Hand (Waving) -->
+  <path d="M 60 135 Q 35 120 40 100 Q 48 95 55 110" fill="url(#bodyGrad)" stroke="#2b6cb0" stroke-width="2"/>
+  <circle cx="38" cy="98" r="8" fill="#ecc94b"/>
+  <!-- Right Hand -->
+  <path d="M 140 135 Q 165 145 160 165" stroke="url(#bodyGrad)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <circle cx="160" cy="165" r="8" fill="#ecc94b"/>
+  <!-- Legs -->
+  <rect x="75" y="175" width="16" height="15" rx="6" fill="#2b6cb0"/>
+  <rect x="109" y="175" width="16" height="15" rx="6" fill="#2b6cb0"/>
+</svg>

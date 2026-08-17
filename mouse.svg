@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mouseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fc8181"/>
+      <stop offset="100%" stop-color="#f56565"/>
+    </linearGradient>
+  </defs>
+  <!-- Curvy Cable -->
+  <path d="M 100 45 Q 100 15 140 20 T 160 10" stroke="#718096" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Main Mouse Body -->
+  <rect x="50" y="45" width="100" height="135" rx="50" fill="url(#mouseGrad)" filter="drop-shadow(0px 8px 10px rgba(0,0,0,0.2))"/>
+  <!-- Left/Right Click Divider -->
+  <line x1="100" y1="45" x2="100" y2="95" stroke="#feb2b2" stroke-width="3"/>
+  <line x1="52" y1="95" x2="148" y2="95" stroke="#feb2b2" stroke-width="3"/>
+  <!-- Scroll Wheel -->
+  <rect x="92" y="55" width="16" height="28" rx="8" fill="#2d3748"/>
+  <line x1="94" y1="64" x2="106" y2="64" stroke="#718096" stroke-width="2"/>
+  <line x1="94" y1="72" x2="106" y2="72" stroke="#718096" stroke-width="2"/>
+  <!-- Cute Face on Palm Rest -->
+  <circle cx="85" cy="130" r="5" fill="#ffffff"/>
+  <circle cx="85" cy="130" r="2.5" fill="#2d3748"/>
+  <circle cx="115" cy="130" r="5" fill="#ffffff"/>
+  <circle cx="115" cy="130" r="2.5" fill="#2d3748"/>
+  <!-- Rosy cheeks -->
+  <ellipse cx="76" cy="136" rx="4" ry="3" fill="#fed7d7"/>
+  <ellipse cx="124" cy="136" rx="4" ry="3" fill="#fed7d7"/>
+  <!-- Smile -->
+  <path d="M 94 140 Q 100 146 106 140" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Mouse Ear indicators (cute animal pun) -->
+  <circle cx="50" cy="55" r="10" fill="#e53e3e" opacity="0.5"/>
+  <circle cx="150" cy="55" r="10" fill="#e53e3e" opacity="0.5"/>
+</svg>
